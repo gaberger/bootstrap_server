@@ -11,7 +11,7 @@
 (defroutes public-routes
   (OPTIONS "/**"                              [] h/options)
   (route/files "/images" {:root "public/images"})
-  (route/files "/config" {:root "public/config"})
+  (route/files "/configs" {:root "public/configs"})
   (route/not-found "Not Found"))
 
 
